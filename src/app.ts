@@ -4,14 +4,14 @@ import { createRoot } from 'react-dom/client';
 
 
 // Import tailwind styles
-import './css/tailwind.css';
+import './styles/tailwind.css';
 
 import 'zmp-ui/zaui.css'; 
 
-import './css/app.css';
+import './styles/app.css';
 
 // Import App Component
-import App from './components/app';
+import App from './Root';
 import appConfig from '../app-config.json';
 
 if (!window.APP_CONFIG) {
