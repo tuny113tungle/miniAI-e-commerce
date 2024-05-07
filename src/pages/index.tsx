@@ -7,7 +7,8 @@ const HomePage: React.FunctionComponent = () => {
   return (
     <Page className="flex items-center bg-white">
       <MobileLayout >
-        <div>stung21stungtung</div>
+        <div className=''>1s2tung21stungtung1</div>
+      <div>a</div>
       </MobileLayout>
     </Page>
   );

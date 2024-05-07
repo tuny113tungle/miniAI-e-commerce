@@ -1,9 +1,8 @@
-module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./src/**/*.{js,jsx,ts,tsx,vue}'],
-  },
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./src/**/*.{html,js,tsx}"],
   theme: {
     extend: {},
   },
+  plugins: [],
 };
