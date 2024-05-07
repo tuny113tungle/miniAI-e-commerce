@@ -1,0 +1,345 @@
+[
+  {
+    "shopId": "64204a17a5a97a86f12e1f0a",
+    "shopMiniAppId": "3668094264182320462",
+    "shopName": "Mặc định",
+    "shopKey": "dev_default",
+    "env": "dev"
+  },
+  {
+    "shopId": "64b4fd0069c0c066cb3792b0",
+    "shopMiniAppId": "158281348807785509",
+    "shopName": "Pharmacy",
+    "shopKey": "dev_pharmacy",
+    "env": "dev"
+  },
+  {
+    "shopId": "64b8db8bb9519ebc40d90425",
+    "shopMiniAppId": "500541687907605679",
+    "shopName": "Education",
+    "shopKey": "dev_education",
+    "env": "dev"
+  },
+  {
+    "shopId": "64c23a7e2d58e955b5dde302",
+    "shopMiniAppId": "4564382397301051083",
+    "shopName": "FnB",
+    "shopKey": "dev_fnb",
+    "env": "dev"
+  },
+  {
+    "shopId": "64c7554243b08d7081a2a37e",
+    "shopMiniAppId": "1625788724564769217",
+    "shopName": "Pekah (Production)",
+    "shopKey": "pro_pekah",
+    "env": "pro"
+  },
+  {
+    "shopId": "64c7586243b08d7081a2a384",
+    "shopMiniAppId": "774686718204537728",
+    "shopKey": "pro_litafa",
+    "shopName": "Litafa (Production)",
+    "env": "pro"
+  },
+  {
+    "shopId": "64c758de43b08d7081a2a387",
+    "shopMiniAppId": "73763332936250877",
+    "shopKey": "pro_bbespoke",
+    "shopName": "Bbespoke (Production)",
+    "env": "pro"
+  },
+  {
+    "shopId": "64c7593043b08d7081a2a38a",
+    "shopMiniAppId": "4218610694904844119",
+    "shopKey": "pro_binh_an",
+    "shopName": "Binh An (Production)",
+    "env": "pro"
+  },
+  {
+    "shopId": "64c759cc43b08d7081a2a38d",
+    "shopMiniAppId": "813533524794154094",
+    "shopKey": "pro_tairmart",
+    "shopName": "Tairmart (Production)",
+    "env": "pro"
+  },
+  {
+    "shopId": "64dd9811f4d588f999497006",
+    "shopMiniAppId": "2329503415688182609",
+    "shopKey": "pro_top_smile",
+    "shopName": "Nha khoa Topsmile",
+    "env": "pro"
+  },
+  {
+    "shopId": "64de1112f4d588f99949701b",
+    "shopMiniAppId": "3153245054308625853",
+    "shopKey": "pro_tmark",
+    "shopName": "T Mark",
+    "env": "pro"
+  },
+  {
+    "shopId": "64204a17a5a97a86f12e1f0a",
+    "shopMiniAppId": "147441173470405938",
+    "shopKey": "pro_risens_miniApp",
+    "shopName": "Risens MiniApp",
+    "env": "pro"
+  },
+  {
+    "shopId": "64e0663ef4d588f999497079",
+    "shopMiniAppId": "568718027327547534",
+    "shopKey": "pro_dib_agency",
+    "shopName": "Dib Mark Agency",
+    "env": "pro"
+  },
+  {
+    "shopId": "64e22945f4d588f999497085",
+    "shopMiniAppId": "4078486287257045086",
+    "shopKey": "pro_anh_sao",
+    "shopName": "Shop Ánh Sao",
+    "env": "pro"
+  },
+  {
+    "shopId": "64eeae28f4d588f999497238",
+    "shopMiniAppId": "2258371504794947349",
+    "shopKey": "pro_upgo",
+    "shopName": "Shop Upgo",
+    "env": "pro"
+  },
+  {
+    "shopId": "64eeadbdf4d588f999497233",
+    "shopMiniAppId": "3325525499991505634",
+    "shopKey": "pro_bizlive",
+    "shopName": "Shop Bizlive",
+    "env": "pro"
+  },
+  {
+    "shopId": "6509110b38dddce86870b7e1",
+    "shopMiniAppId": "2525758664988230356",
+    "shopKey": "pro_annie_house",
+    "shopName": "Annies House",
+    "env": "pro"
+  },
+  {
+    "shopId": "6509116c38dddce86870b7e5",
+    "shopMiniAppId": "4120839853048566324",
+    "shopKey": "pro_horme_flooring",
+    "shopName": "Horme Flooring",
+    "env": "pro"
+  },
+  {
+    "shopId": "6509118d38dddce86870b7e9",
+    "shopMiniAppId": "4471837315404305948",
+    "shopKey": "pro_hannah_foods",
+    "shopName": "Hannah Foods",
+    "env": "pro"
+  },
+  {
+    "shopId": "6509137e38dddce86870b7ec",
+    "shopMiniAppId": "2675243760587927322",
+    "shopKey": "pro_tong_kho_si",
+    "shopName": "Tổng kho sỉ",
+    "env": "pro"
+  },
+  {
+    "shopId": "651fd43924f683dc28cf353a",
+    "shopMiniAppId": "2370268393438310795",
+    "shopKey": "pro_eco_academy",
+    "shopName": "Eco Academy Official",
+    "env": "pro"
+  },
+  {
+    "shopId": "65389da1cef55c951bbc802e",
+    "shopMiniAppId": "242369133286266239",
+    "shopKey": "pro_mini_ap",
+    "shopName": "Mini Ap",
+    "env": "pro"
+  },
+  {
+    "shopId": "6529112724f683dc28cf3549",
+    "shopMiniAppId": "2723171369368630701",
+    "shopKey": "pro_you_are_nuts",
+    "shopName": "You Are Nuts",
+    "env": "pro"
+  },
+  {
+    "shopId": "654a026ed0d8466fd55535ae",
+    "shopMiniAppId": "1048195797809147584",
+    "shopKey": "pro_neta_link",
+    "shopName": "Netalink",
+    "env": "pro"
+  },
+  {
+    "shopId": "654dddd2d38abcaacf0307b1",
+    "shopMiniAppId": "1511380442184531788",
+    "shopKey": "pro_minh_chau",
+    "shopName": "Nhà thuốc Minh Châu",
+    "env": "pro"
+  },
+  {
+    "shopId": "654df5e1af752bba492966cd",
+    "shopMiniAppId": "2253782654364834725",
+    "shopKey": "pro_beauty_zone",
+    "shopName": "Beauty Zone",
+    "env": "pro"
+  },
+  {
+    "shopId": "654df637af752bba492966d1",
+    "shopMiniAppId": "2859071517782518429",
+    "shopKey": "pro_bi_house",
+    "shopName": "BiHouse",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d80b0b08cd2c88507d00",
+    "shopMiniAppId": "2918485139758308748",
+    "shopKey": "pro_your_closet",
+    "shopName": "Your Closet",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d82b0b08cd2c88507d04",
+    "shopMiniAppId": "2484415941197855886",
+    "shopKey": "pro_yeu_cong_nghe",
+    "shopName": "Yêu công nghệ",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d8490b08cd2c88507d08",
+    "shopMiniAppId": "279327584602022152",
+    "shopKey": "pro_care_by_gemnie",
+    "shopName": "Care by Gemnie",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d8640b08cd2c88507d0c",
+    "shopMiniAppId": "1179376300285934749",
+    "shopKey": "pro_bebibu",
+    "shopName": "Bebibu",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d8810b08cd2c88507d10",
+    "shopMiniAppId": "693038702570880098",
+    "shopKey": "pro_tt_0901",
+    "shopName": "TT 0901",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d8d40b08cd2c88507d16",
+    "shopMiniAppId": "2492303562771410874",
+    "shopKey": "pro_hp_house",
+    "shopName": "HP House Thế giới Hàng Gia Dụng",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d8f30b08cd2c88507d1a",
+    "shopMiniAppId": "2517078128130925226",
+    "shopKey": "pro_prosing",
+    "shopName": "Prosing",
+    "env": "pro"
+  },
+  {
+    "shopId": "6551d9090b08cd2c88507d1e",
+    "shopMiniAppId": "2812738093461106141",
+    "shopKey": "pro_ty_house",
+    "shopName": "TY HOUSE",
+    "env": "pro"
+  },
+  {
+    "shopId": "65684038a3c03be1b1dd61d6",
+    "shopMiniAppId": "3237771325110445542",
+    "shopKey": "pro_huynh_bao",
+    "shopName": "Phụ kiện Huỳnh Bảo",
+    "env": "pro"
+  },
+  {
+    "shopId": "6571301640e1c0d68188e282",
+    "shopMiniAppId": "421010068933968541",
+    "shopKey": "pro_bich_thu",
+    "shopName": "Trung tâm lốp xe Bích Thư",
+    "env": "pro"
+  },
+  {
+    "shopId": "6576a24cd36e41035dbbbd5e",
+    "shopMiniAppId": "381899748820485182",
+    "shopKey": "pro_quang_danh",
+    "shopName": "Thực phẩm Quang Danh",
+    "env": "pro"
+  },
+  {
+    "shopId": "657bca0bd36e41035dbbc97c",
+    "shopMiniAppId": "3457078840691081738",
+    "shopKey": "pro_beli_shop",
+    "shopName": "Beli Shop",
+    "env": "pro"
+  },
+  {
+    "shopId": "657bc935d36e41035dbbc974",
+    "shopMiniAppId": "2050331423600539936",
+    "shopKey": "pro_lam_moc",
+    "shopName": "Store Làm Mộc",
+    "env": "pro"
+  },
+  {
+    "shopId": "657bcdffd36e41035dbbc997",
+    "shopMiniAppId": "2508813073445905534",
+    "shopKey": "pro_hi_beauty",
+    "shopName": "Hi Beauty",
+    "env": "pro"
+  },
+  {
+    "shopId": "657fc2ea63e9c0c6602183f3",
+    "shopMiniAppId": "713188172270800065",
+    "shopKey": "pro_hm_studio",
+    "shopName": "HM Studio",
+    "env": "pro"
+  },
+  {
+    "shopId": "6594e4a4339e5fd76cd19281",
+    "shopMiniAppId": "2536623596516649713",
+    "shopKey": "pro_gymwhey",
+    "shopName": "GYMWHEY",
+    "env": "pro"
+  },
+  {
+    "shopId": "65a0c05c7f9d153c8df6d406",
+    "shopMiniAppId": "1338797368965310224",
+    "shopKey": "pro_micofi",
+    "shopName": "Micofi Workspace",
+    "env": "pro"
+  },
+  {
+    "shopId": "65a9099e7e875ac41741d95a",
+    "shopMiniAppId": "1543955256497206363",
+    "shopKey": "pro_automatik",
+    "shopName": "Automatik",
+    "env": "pro"
+  },
+  {
+    "shopId": "65f9852330638567597fc885",
+    "shopMiniAppId": "1753382718896632428",
+    "shopKey": "pro_in_gia_tot",
+    "shopName": "In Gía Tốt",
+    "env": "pro"
+  },
+  {
+    "shopId": "6600ecc6fe1495ac023f883c",
+    "shopMiniAppId": "2374007050796653958",
+    "shopKey": "pro_bau_may",
+    "shopName": "Dinh dưỡng Bầu Mây",
+    "env": "pro"
+  },
+  {
+    "shopId": "660b82aaff80a4968af99bf9",
+    "shopMiniAppId": "3473928275901168946",
+    "shopKey": "pro_eco_care",
+    "shopName": "Eco Care",
+    "env": "pro"
+  },
+  {
+    "shopId": "66136176656361f58c39417d",
+    "shopMiniAppId": "3180731711276716946",
+    "shopKey": "pro_tiem_banh_3T",
+    "shopName": "Tiệm bánh 3T",
+    "env": "pro"
+  }
+]

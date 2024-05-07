@@ -3,12 +3,14 @@ module.exports = {
   env: { browser: true, es2020: true },
   extends: [
     'prettier',
+    'eslint-config-prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
+  ignorePatterns: 'vite.config.ts',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['@typescript-eslint/eslint-plugin', 'prettier', 'react-refresh'],
   rules: {
@@ -16,21 +18,18 @@ module.exports = {
     'react-refresh/only-export-components': 'warn',
     'no-console': 1,
     'prettier/prettier': [
-      'error',
-      {
-        endOfLine: 'auto',
-        singleQuote: true,
-        printWidth: 150,
-        trailingComma: 'all',
-      },
-    ],
-    '@typescript-eslint/no-unused-vars': [
       'warn',
       {
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^_',
-        caughtErrorsIgnorePattern: '^_',
-      },
-    ],
+        arrowParens: 'always',
+        semi: false,
+        trailingComma: 'none',
+        tabWidth: 2,
+        endOfLine: 'auto',
+        useTabs: false,
+        singleQuote: true,
+        printWidth: 120,
+        jsxSingleQuote: true
+      }
+    ]
   },
 };
