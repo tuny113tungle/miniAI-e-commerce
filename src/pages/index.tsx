@@ -6,7 +6,7 @@ const HomePage:React.FunctionComponent = () => {
 
   return (
     <Page className="page">
-      Hello Zalo Mini Apptungsassâ
+      Hello Zalo Minise1 2
     </Page>
   );
 }
