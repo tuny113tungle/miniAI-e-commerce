@@ -2,7 +2,7 @@ import axios from 'axios';
 import qs from 'querystringify';
 import CookiesService from './CookiesService';
 import { SHOP_LISTS, Shop, shop } from './configs';
-import { CreateAffiliateSharedHistory } from '@/types/affiliate';
+import { CreateAffiliateSharedHistory } from '../types/affiliate';
 const getBaseUrl = (shopKey: Shop) => {
   const shop = SHOP_LISTS.find((item) => item.shopKey === shopKey);
   switch (shop?.env) {
