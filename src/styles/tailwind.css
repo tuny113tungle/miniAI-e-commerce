@@ -15,7 +15,13 @@
   width: 12px !important;
 }
 
+.slick-dots li button::before {
+  opacity: 0.5 !important;
+  color: white !important;
+  font-size: 7px !important;
+}
 .slick-dots li.slick-active button:before {
-  opacity: .75 !important;
-  color: --color-primary-100 !important;
+  /* color: black !important; */
+  opacity: 3 !important;
+  font-size: 7px !important;
 }

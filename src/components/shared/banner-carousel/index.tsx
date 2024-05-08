@@ -19,7 +19,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true, // Thêm thuộc tính autoplay và đặt giá trị thành true
-  autoplaySpeed: 1100,
+  autoplaySpeed: 1900,
 };
 
 export default function MobileBannerCarousel(props: MobileBannerCarouselProps): JSX.Element {
@@ -28,7 +28,7 @@ export default function MobileBannerCarousel(props: MobileBannerCarouselProps): 
     console.log("🚀 ~ MobileBannerCarousel ~ shopSetting:", shopSetting)
   return (
     <>
-      <div className={classNames('w-full mt-8 flex justify-center rounded-[10px]', className)}>
+      <div className={classNames('w-full mt-2 flex justify-center rounded-[10px]', className)}>
         <div className='w-11/12'>
         {children}
         <Slider {...settings}>

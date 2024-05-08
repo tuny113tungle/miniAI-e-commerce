@@ -1,7 +1,7 @@
-
+/* eslint-disable prettier/prettier */
 import classNames from 'classnames';
-import { size } from 'lodash';
-import React, { useEffect, useMemo } from 'react';
+import { endsWith, size } from 'lodash';
+import React, { useEffect, useMemo, useState } from 'react';
 import { BiHomeHeart } from 'react-icons/bi';
 import { GiMedicines } from 'react-icons/gi';
 import { HiOutlineUserCircle } from 'react-icons/hi';
@@ -12,25 +12,24 @@ import { CgMenuLeft } from 'react-icons/cg';
 import { LiaUser } from 'react-icons/lia';
 import { LuPartyPopper } from 'react-icons/lu';
 import { VscGift } from 'react-icons/vsc';
-import CookiesService from '@/apis/CookiesService';
-import { useShopSetting } from '@/hooks/useShopSetting';
-import { useNavigateBlockPath } from '@/components/organisms/navigator-block-path';
-import { useColor } from '@/hooks/useColor';
-
-export declare interface MobileBottomNavigatorProps {
+import CookiesService from '@/src/apis/CookiesService';
+import { useShopSetting } from '@/src/hooks/useShopSetting';
+import { useNavigateBlockPath } from '../navigator-block-path';
+export declare interface BottomNavigatorProps {
   children?: JSX.Element | JSX.Element[] | React.ReactNode;
   className?: string;
   [x: string]: any;
 }
 
-/**
- * Author: Nguyễn Thanh Sơn
- * Created At: April 14, 2023
- * Description:
- * @param props
- * @returns JSX.Element
- */
 const menuMainItems2 = [
+  {
+    path: '/',
+    icon: ({ className }: any) => {
+      return <TbSmartHome className={className} />;
+    },
+    title: 'Trang chủ',
+    condition: { isLogin: true },
+  },
   {
     path: '/categories',
     icon: ({ className }: any) => {
@@ -47,14 +46,7 @@ const menuMainItems2 = [
     title: 'Ưu đãi',
     condition: { isLogin: true, isHasPhone: true },
   },
-  {
-    path: '/',
-    icon: ({ className }: any) => {
-      return <TbSmartHome className={className} />;
-    },
-    title: 'Trang chủ',
-    condition: { isLogin: true },
-  },
+
   {
     path: '/notifications',
     icon: ({ className }: any) => {
@@ -75,6 +67,14 @@ const menuMainItems2 = [
 
 const menuPharmacityItems = [
   {
+    path: '/',
+    icon: ({ className }: any) => {
+      return <BiHomeHeart className={className} />;
+    },
+    title: 'Trang chủ',
+    condition: { isLogin: true },
+  },
+  {
     path: '/categories',
     icon: ({ className }: any) => {
       return <GiMedicines className={className} />;
@@ -92,14 +92,6 @@ const menuPharmacityItems = [
     condition: { isLogin: true, isHasPhone: true },
   },
 
-  {
-    path: '/',
-    icon: ({ className }: any) => {
-      return <BiHomeHeart className={className} />;
-    },
-    title: 'Trang chủ',
-    condition: { isLogin: true },
-  },
   {
     path: '/notifications',
     icon: ({ className }: any) => {
@@ -119,15 +111,16 @@ const menuPharmacityItems = [
   },
 ];
 
-export default function MobileBottomNavigator(props: MobileBottomNavigatorProps): JSX.Element {
+export default function BottomNavigator(props: BottomNavigatorProps): JSX.Element {
   const { className } = props;
   const loacation = useLocation();
+  const {data: shopSetting, refetch} = useShopSetting();
   const token = CookiesService.getClientCookies('token');
 
   const { navigate, renderPhoneModal } = useNavigateBlockPath();
-  const {data: shopSetting, isFetching, refetch} = useShopSetting();
-//   const { isFetching } = useAuth();
-
+  // const { refetch } = useAuth();
+  const [isVisible, setIsVisible] = useState(true);
+  const [selectedIndex, setSelectedIndex] = useState<number>();
   const items = useMemo(() => {
     switch (shopSetting?.industry) {
       case 'pharmacy':
@@ -139,55 +132,63 @@ export default function MobileBottomNavigator(props: MobileBottomNavigatorProps)
 
   useEffect(() => {
     if (token) {
-        refetch();
+      refetch()
     }
   }, [token]);
 
-  if (isFetching) {
-    return <></>;
-  }
-
+  // if (isLoading) {
+  //   return <></>;
+  // }
   return (
     <>
-      <div className={classNames(' ', className)}>
-        <div className="fixed bottom-[14px] left-1/2 rounded-[25px] overflow-hidden  z-10  w-[91%]  transform -translate-x-1/2 h-[54px] bg-primary-100 ">
-          {renderPhoneModal()}
-          <div className="flex justify-around items-center flex-row grow z-[999999999999999999999] h-full mx-auto gap-2 rounded-[22px] ">
-            {size(items) > 0 &&
-              items.map((item: any, index: number) => {
-                return (
+      <div
+        className={classNames(
+          `fixed bottom-[14px] left-1/2 rounded-[25px] overflow-hidden transform -translate-x-1/2  z-10  w-[91%]  h-[54px] bg-primary-100 transition-transform duration-500`,
+          { 'transform translate-y-0 ': isVisible, 'transform translate-y-full bottom-[-34px] ': !isVisible },
+        )}
+      >
+        {renderPhoneModal()}
+        <div className="flex justify-around items-center flex-row grow z-[999999999999999999999] h-full mx-auto gap-2 rounded-[22px] ">
+          {size(items) > 0 &&
+            items.map((item: any, index: number) => {
+              const isActive = endsWith(location.pathname, item?.path);
+              return (
+                <div
+                  key={index}
+                  onClick={() => {
+                    setSelectedIndex(index);
+                    navigate({
+                      path: item?.path,
+                      condition: item.condition,
+                    });
+                    // dispatch(hideProductModal({}));
+                  }}
+                >
                   <div
-                    onClick={() => {
-                    //   dispatch(hideProductModal({}));
-                      navigate({
-                        path: item?.path,
-                        condition: item.condition,
-                      });
-                    }}
-                    className="flex flex-col items-center justify-center grow"
-                    key={index}
-                  >
-                    {item?.icon({
-                      className: `w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500 ${
-                        item?.path === loacation.pathname ? 'text-primary-100' : 'text-gray-500'
-                      }`,
-                    })}
-                    {item?.title && (
-                      <span
-                        className={`w-full ${
-                          item?.path === loacation.pathname ? 'text-primary-100 font-medium' : 'text-gray-600 font-light'
-                        } text-[9px] text-center`}
-                      >
-                        {item?.title}
-                      </span>
+                    className={classNames(
+                      `flex items-center justify-between ${isActive ? `bg-white rounded-[20px] px-[14px] py-[8px] space-x-[6px]` : ''} `,
                     )}
+                  >
+                    <div>
+                      {item?.icon({
+                        className: `w-[20px] h-[20px]  group-hover:text-blue-600 mr-[1px] ${
+                          isActive ? 'w-[16px] h-[16px] bg-white text-primary-100 ' : 'text-white'
+                        }`,
+                      })}
+                    </div>
+                    <div>
+                      {item?.title && (
+                        <span className={`w-full ${isActive ? 'text-primary-100 font-medium' : 'hidden'} text-[12px] text-center`}>
+                          {item?.title}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                );
-              })}
-          </div>
+                </div>
+              );
+            })}
         </div>
       </div>
-      <span className="opacity-0">-</span>
     </>
   );
 }

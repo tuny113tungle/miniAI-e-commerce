@@ -8,8 +8,6 @@ import './styles/tailwind.css';
 
 import 'zmp-ui/zaui.css'; 
 
-import './styles/app.css';
-
 // Import App Component
 import App from './Root';
 import appConfig from '../app-config.json';

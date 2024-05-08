@@ -1,4 +1,5 @@
-import API from "@/apis/Api";
+import API from "../apis/Api";
+
 
 export enum AffiliateEvent {
   VIEW_APP = 'view_app',

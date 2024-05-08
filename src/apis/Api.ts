@@ -176,6 +176,15 @@ export const Create = (baseURL = BASE_URL) => {
         'Shop-Id': SHOP_ID,
       },
     });
+
+     // lấy giỏ hàng theo user
+  const getCart = () =>
+  api.get(`/default-cart`, {
+    headers: {
+      Authorization: 'Bearer ' + CookiesService.getClientCookies('token'),
+      'Shop-Id': SHOP_ID,
+    },
+  });
   return {
     GET,
     POST,
@@ -191,7 +200,8 @@ export const Create = (baseURL = BASE_URL) => {
     createAffiliateTrackingEvent,
     checkLoginZalo,
     updateZaloInfo,
-    updateFollowOa
+    updateFollowOa,
+    getCart
   };
 };
 

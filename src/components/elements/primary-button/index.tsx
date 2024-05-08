@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { useShopSetting } from '@/hooks/useShopSetting';
+import { useShopSetting } from '@/src/hooks/useShopSetting';
 
 export declare interface PrimaryButtonProps {
   id?: string;
