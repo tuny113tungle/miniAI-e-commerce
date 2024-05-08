@@ -5,3 +5,17 @@
 :root{
   --color-primary-100: ;
 }
+
+.slick-dots {
+  bottom: 2px !important;
+}
+
+.slick-dots li {
+  margin: 0 !important;
+  width: 12px !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75 !important;
+  color: --color-primary-100 !important;
+}

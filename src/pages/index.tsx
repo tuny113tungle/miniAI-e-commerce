@@ -8,7 +8,7 @@ const HomePage = () => {
   const { } = useColor();
 
   return (
-    <Page className="flex items-center bg-white">
+    <Page className="flex items-center bg-[#ffffff]">
       <MobileLayout >
         <MobileBannerCarousel/>
       </MobileLayout>

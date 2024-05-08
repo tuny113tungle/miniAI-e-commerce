@@ -37,7 +37,7 @@ export default function MobileBannerCarousel(props: MobileBannerCarouselProps): 
             key={index} 
             src={ensureMediaPath(banner)} 
             alt={`banner-${index}`} 
-            className="w-full h-[calc(20vh)] object-cover rounded-[10px]" 
+            className="w-full h-[calc(15vh)] object-fill rounded-[10px]" 
           />
         ))}
         </Slider>
