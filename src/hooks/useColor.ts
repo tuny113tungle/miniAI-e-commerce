@@ -14,7 +14,7 @@ export const useColor = () => {
     const _primaryColor = new Color(primary100Color);
     const _secondaryColor = new Color(secondary100Color);
 
-    document.documentElement.style.setProperty('--color-primary-1000', primary100Color);
+    document.documentElement.style.setProperty('--color-primary-100', primary100Color);
     document.documentElement.style.setProperty('--color-primary-950', _primaryColor.lighten(0.95).hex());
     document.documentElement.style.setProperty('--color-primary-900', _primaryColor.lighten(0.9).hex());
     document.documentElement.style.setProperty('--color-primary-800', _primaryColor.lighten(0.8).hex());
@@ -25,7 +25,7 @@ export const useColor = () => {
     document.documentElement.style.setProperty('--color-primary-400', _primaryColor.lighten(0.4).hex());
     document.documentElement.style.setProperty('--color-primary-300', _primaryColor.lighten(0.3).hex());
     document.documentElement.style.setProperty('--color-primary-200', _primaryColor.lighten(0.2).hex());
-    document.documentElement.style.setProperty('--color-primary-100', _primaryColor.lighten(0.1).hex());
+    document.documentElement.style.setProperty('--color-primary-1000', _primaryColor.lighten(0.1).hex());
 
     document.documentElement.style.setProperty('--color-secondary-1000', secondary100Color);
     document.documentElement.style.setProperty('--color-secondary-900', _secondaryColor.lighten(0.9).hex());

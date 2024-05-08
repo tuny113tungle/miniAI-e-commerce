@@ -1,10 +1,10 @@
 {
   "app": {
-    "title": "miniai-e-commerce",
-    "headerTitle": "miniai-e-commerce",
-    "headerColor": "#cc316f",
+    "title": "",
+    "headerTitle": "",
+    "headerColor": "",
     "textColor": "white",
-    "statusBarColor": "#1843EF",
+    "statusBarColor": "#FF4C3B",
     "leftButton": "back",
     "statusBar": "normal",
     "actionBarHidden": false,
