@@ -44,14 +44,14 @@ export default function HeaderSearch(props: MobileHeaderProps): JSX.Element {
 
   return (
     <>
-    <div className={classNames('h-[5vh] w-full' , classNames())}>
+    <div className={classNames('h-[5vh] w-full mt-[1vh] flex justify-center' , classNames())}>
       <div
-        className='w-full flex items-center justify-center mt-[1vh]'
+        className='w-11/12 '
       >
-        <div className="w-11/12">
+        <div className="w-11/12 flex justify-start">
           {!justLogo && (
-            <div className="flex w-full items-center space-x-[4px]">
-              <div className="w-[74%] flex flex-row items-center rounded-[10px] border-[1.5px] border-primary-100 overflow-hidden bg-white relative">
+            <div className="flex w-full items-center">
+              <div className="w-10/12 flex flex-row items-center rounded-[10px] border-[1.5px] border-primary-100 overflow-hidden bg-white relative">
                 <BiSearch className="text-lg text-black absolute left-3" />
                 <input
                   value={queryString}
@@ -69,9 +69,9 @@ export default function HeaderSearch(props: MobileHeaderProps): JSX.Element {
                   <div className="text-[13px]">Tìm</div>
                 </div>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <SecondCart />
-              </div>
+              </div> */}
             </div>
           )}
         </div>
